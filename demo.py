@@ -220,7 +220,7 @@ def beep(state):
 
 
 def keyboard_listener(recorder):
-    print("请按【空格键】开始说话，【Esc】退出：")
+    print("请单击【空格键】开始说话，【Esc】退出：")
     while True:
         if keyboard.is_pressed('esc'):
             if recorder.isRecording:
@@ -232,7 +232,7 @@ def keyboard_listener(recorder):
             beep(START)
             recorder.start_recording()
             time.sleep(1)
-            print("\n请按【空格键】开始说话，【Esc】退出：")
+            print("\n请单击【空格键】开始说话，【Esc】退出：")
           
 
        
